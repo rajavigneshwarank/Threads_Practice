@@ -14,7 +14,7 @@ public class SyncRaceStatic {
 class Counter2 {
     static int count = 0;
 
-    static synchronized void increment() { // lock on Counter.class
+    static synchronized void increment() {
         count++;
     }
 }

@@ -23,7 +23,7 @@ class MyTask implements Runnable {
     public void run() {
         System.out.println("task " + taskId + " started by " + Thread.currentThread().getName());
         try {
-            Thread.sleep(2000); // simulate task execution
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
