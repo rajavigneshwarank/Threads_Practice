@@ -47,11 +47,11 @@ class Producer extends Thread {
     }
 
     public void run() {
-        for (int i = 1; i <= 3; i++) {
+        for (int i = 1; i <= 4; i++) {
             s.produce(i);
 
             try {
-                Thread.sleep(2000);
+                Thread.sleep(1000);
             } catch (InterruptedException e) {}
         }
     }
@@ -64,10 +64,10 @@ class Consumer extends Thread {
     }
 
     public void run() {
-        for (int i = 1; i <= 3; i++) {
+        for (int i = 1; i <= 5; i++) {
             s.consume();
             try {
-                Thread.sleep(2000);
+                Thread.sleep(1000);
             } catch (InterruptedException e) {}
         }
     }
